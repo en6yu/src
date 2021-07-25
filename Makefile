@@ -6,7 +6,7 @@ CFLAGS= -O2 -g
 CXXFLAGS=${CFLAGS}
 CC= gcc
 CXX= g++
-SUBDIRS= base const   static test this inline sizeof
+SUBDIRS= base const   static test this inline sizeof pureVirtual vptrTable
 ALL:
 	@for n in $(SUBDIRS); do make -C $$n ; done
 clean:
